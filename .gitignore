@@ -16,5 +16,6 @@
 
 .prettierignore
 
+# Removing local hidden files
 .originals/
 .vscode/
