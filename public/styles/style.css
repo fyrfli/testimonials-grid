@@ -1,0 +1,102 @@
+body {
+    background-color: #EDF2F8;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+}
+@media screen and (max-width: 375px) {
+    .container {
+        width: 375px;
+    }
+    
+}
+h2 {
+    font-size: .8em;
+    margin: 0;
+}
+h3 {
+    font-size: .6em;
+    margin: 0;
+}
+
+
+.dan {
+    grid-area: dan;
+    background-color: #733FC8;
+    padding: 20px;
+    color: #cfcfcf;
+}
+.dan img {
+    border-radius: 100px;
+    border: 2px solid #9f81d1;
+    float: left;
+    margin-right: 10px;
+    width: 30px;
+}
+.dan p {
+    color: #cfcfcfb3;
+    font-size: .9em;
+}
+.dan .title {
+    color: #cfcfcf80;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.dan .para {
+    font-size: 1.6em;
+    margin: 0;
+}
+.jon {
+    grid-area: jon;
+    background-color: #49556B;
+    padding: 20px;
+    color: hsl(0, 0%, 81%);
+}
+.jea {
+    grid-area: jea;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.pat {
+    grid-area: pat;
+    background-color: #151D28;
+    padding: 20px;
+    color: hsl(0, 0%, 81%);
+}
+.kia {
+    grid-area: kia;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.box {
+    border-radius: 6px;
+    box-shadow: 10px 10px 40px hsl(0, 0%, 81%);
+    padding: 36px;
+}
+.container {
+    /* box-sizing: border-box; */
+    width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "dan dan jon kia"
+        "dan dan jon kia"
+        "jea pat pat kia"
+        "jea pat pat kia";
+    gap: 10px;
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 40px;
+    font-size: .9em;
+    color: #00000080;
+}
+.attribution a:any-link {
+    text-decoration: none;
+    color: #733FC890;
+}
+.attribution a:hover {
+    text-shadow: 0 0 10px #80808080;
+    cursor: grab;
+}
