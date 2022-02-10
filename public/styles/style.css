@@ -3,47 +3,11 @@ body {
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 13px;
 }
-@media screen and (max-width: 375px) {
-    .container {
-        width: 375px;
-    }
-    
-}
-h2 {
-    font-size: .8em;
-    margin: 0;
-}
-h3 {
-    font-size: .6em;
-    margin: 0;
-}
-
-
 .dan {
     grid-area: dan;
     background-color: #733FC8;
     padding: 20px;
     color: #cfcfcf;
-}
-.dan img {
-    border-radius: 100px;
-    border: 2px solid #9f81d1;
-    float: left;
-    margin-right: 10px;
-    width: 30px;
-}
-.dan p {
-    color: #cfcfcfb3;
-    font-size: .9em;
-}
-.dan .title {
-    color: #cfcfcf80;
-    margin: 0;
-    margin-bottom: 20px;
-}
-.dan .para {
-    font-size: 1.6em;
-    margin: 0;
 }
 .jon {
     grid-area: jon;
@@ -72,8 +36,58 @@ h3 {
     box-shadow: 10px 10px 40px hsl(0, 0%, 81%);
     padding: 36px;
 }
+.box img {
+    border-radius: 100px;
+    border: 2px solid hsla(0, 0%, 81%, 0.5);
+    float: left;
+    margin-right: 10px;
+    width: 30px;
+}
+.box p {
+    color: #cfcfcfb3;
+    font-size: .9em;
+}
+.box .title {
+    color: #cfcfcf80;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.box .para {
+    font-size: 1.6em;
+    margin: 0;
+}
+@media screen and (max-width: 375px) {
+    .container {
+        width: 375px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "dan"
+            "dan"
+            "dan"
+            "jon"
+            "jon"
+            "jea"
+            "jea"
+            "pat"
+            "pat"
+            "pat"
+            "kia"
+            "kia"
+            "kia";
+        gap: 10px;
+    } 
+}
+h2 {
+    font-size: .8em;
+    margin: 0;
+}
+h3 {
+    font-size: .6em;
+    margin: 0;
+}
 .container {
-    /* box-sizing: border-box; */
     width: 1440px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -85,7 +99,6 @@ h3 {
         "jea pat pat kia";
     gap: 10px;
 }
-
 .attribution {
     text-align: center;
     margin-top: 40px;
