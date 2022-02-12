@@ -82,12 +82,8 @@ svg {
     float: right;
 }
 .container {
-    margin: 5% 10%;
+    margin: 2% 10%;
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
-    /* grid-template-columns: minmax(180px, max-content)
-                       repeat(auto-fill, 200px) 20%; */
-    /* grid-template-rows: auto; */
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
         "dan dan jon kia"
@@ -121,7 +117,7 @@ svg {
 }
 .attribution {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: .9em;
     color: #00000080;
 }
