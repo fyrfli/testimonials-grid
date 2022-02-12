@@ -2,7 +2,7 @@ body {
     background-color: #EDF2F8;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-size: 13px;
-    margin: 2rem auto;
+    margin: 1.2rem auto;
 }
 .dan {
     grid-area: dan;
@@ -10,22 +10,32 @@ body {
     padding: 20px;
     color: #cfcfcf;
 }
+.dan h3 {
+    color: #cfcfcf80;
+}
 .jon {
     grid-area: jon;
     background-color: #49556B;
     padding: 20px;
-    color: hsl(0, 0%, 81%);
+    color: #cfcfcf;
+}
+.jon h3 {
+    color: #cfcfcf80;
 }
 .jea {
     grid-area: jea;
     background-color: #FFFFFF;
     padding: 20px;
+    color: #48556a;
 }
 .pat {
     grid-area: pat;
     background-color: #151D28;
     padding: 20px;
-    color: hsl(0, 0%, 81%);
+    color: #cfcfcf;
+}
+.pat .title .para {
+    color: #ffffff80;
 }
 .kia {
     grid-area: kia;
@@ -48,8 +58,11 @@ body {
     color: #cfcfcfb3;
     font-size: .9em;
 }
+.box name {
+    color: #808080b3;
+}
 .box .title {
-    color: #cfcfcf80;
+    color: hsla(0, 0%, 81%, 0.85);
     margin: 0;
     margin-bottom: 20px;
 }
@@ -57,9 +70,35 @@ body {
     font-size: 1.6em;
     margin: 0;
 }
-@media screen and (max-width: 375px) {
+h2 {
+    font-size: .8em;
+    margin: 0;
+}
+h3 {
+    font-size: .6em;
+    margin: 0;
+}
+svg {
+    float: right;
+}
+.container {
+    margin: 5% 10%;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
+    /* grid-template-columns: minmax(180px, max-content)
+                       repeat(auto-fill, 200px) 20%; */
+    /* grid-template-rows: auto; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "dan dan jon kia"
+        "dan dan jon kia"
+        "jea pat pat kia"
+        "jea pat pat kia";
+    gap: 10px;
+}
+@media (max-width: 420px) {
     .container {
-        width: 375px;
+        /* width: 375px; */
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
@@ -79,32 +118,6 @@ body {
             "kia";
         gap: 30px;
     } 
-}
-h2 {
-    font-size: .8em;
-    margin: 0;
-}
-h3 {
-    font-size: .6em;
-    margin: 0;
-}
-svg {
-    float: right;
-}
-.container {
-    /* width: 1440px; */
-    margin: 5% 10%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    /* grid-template-columns: minmax(100px, max-content)
-                       repeat(auto-fill, 200px) 20%; */
-    /* grid-template-rows: auto; */
-    grid-template-areas:
-        "dan dan jon kia"
-        "dan dan jon kia"
-        "jea pat pat kia"
-        "jea pat pat kia";
-    gap: 30px;
 }
 .attribution {
     text-align: center;
