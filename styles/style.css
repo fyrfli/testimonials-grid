@@ -26,7 +26,10 @@ body {
     grid-area: jea;
     background-color: #FFFFFF;
     padding: 20px;
-    color: #48556a;
+    color: hsl(217, 19%, 35%);
+}
+.jea p {
+    color: hsl(217, 19%, 35%);
 }
 .pat {
     grid-area: pat;
@@ -57,6 +60,9 @@ body {
 .box p {
     color: #cfcfcfb3;
     font-size: .9em;
+}
+.jea p, .kia p {
+    color: hsla(217, 19%, 35%, 0.80);
 }
 .box name {
     color: #808080b3;
@@ -92,7 +98,7 @@ svg {
         "jea pat pat kia";
     gap: 10px;
 }
-@media (max-width: 420px) {
+@media (max-width: 800px) {
     .container {
         /* width: 375px; */
         display: grid;
