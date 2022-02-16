@@ -17,4 +17,4 @@
 .prettierignore
 
 # Removing local hidden files
-.vscode/
+.vault
